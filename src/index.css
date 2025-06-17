@@ -1,0 +1,477 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+  background: #d1d0d0;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: #000;
+  margin: auto 0;
+  padding: 0px 0px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  font-family: "McLaren", cursive;
+  color: #fff;
+  font-weight: 200;
+  margin-left: 30px;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 30px;
+  padding: 20px 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav li a:hover {
+  color: #5c4e4e;
+}
+
+/* Our Intro section style */
+.intro {
+  margin: auto 40px;
+  padding: 46px 1px;
+  margin-top: 60px;
+}
+.intro .h3 {
+  font-size: 30px;
+  font-weight: 300;
+  padding-left: 3px;
+}
+.intro .h1 {
+  font-size: 100px;
+  font-weight: 400;
+  color: #000;
+}
+.intro .h2 {
+  font-size: 40px;
+  font-weight: 300;
+  padding-left: 3px;
+}
+.title {
+  padding: 6px;
+  color: #fff;
+  background-color: #988686;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+.btn {
+  background: #5c4e4e;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 35px;
+  font-weight: 200;
+  margin-top: 60px;
+  display: inline-block;
+  border: 2px solid #5c4e4e;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #d1d0d0;
+  color: #5c4e4e;
+}
+.btn a:hover {
+  color: #5c4e4e;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Styling for About page*/
+.about {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 30px;
+}
+.aboutMe {
+  text-align: center;
+  color: #5c4e4e;
+  line-height: 20px;
+  font-weight: 500;
+}
+.photo img {
+  width: 30%;
+  height: 85%;
+  border: 2px dashed #988686;
+  margin-left: 20px;
+}
+.bio {
+  border-spacing: 20px;
+  line-height: 30px;
+  margin-left: -50%;
+}
+
+/* Styles for Skills Page*/
+.skillPage {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  padding: 10px;
+}
+.skillPage h1 {
+  color: #fff;
+}
+.skills {
+  display: flex;
+  padding: 20px;
+}
+.web-design {
+  background: #5c4e4e;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  width: 50%;
+  transition: 0.3s ease;
+}
+.web-design-content {
+  padding: 10px;
+  transition: 0.3s ease;
+}
+.web-design:hover {
+  background: #988686;
+  cursor: pointer;
+}
+.web-design-content:hover {
+  transform: scale(1.1);
+}
+.web-design h2,
+h4 {
+  color: #fff;
+  font-weight: 200;
+}
+
+/*Styling for Technology page*/
+.tech {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 30px;
+  padding: 16px 10px;
+}
+
+.skill-container {
+  margin-bottom: 15px;
+}
+h1 {
+  text-align: center;
+  color: #5c4e4e;
+}
+
+.skill-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background-color: #5c4e4e;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  line-height: 20px;
+}
+.tech2 {
+  margin-left: 10%;
+  width: 82%;
+}
+
+/* Styling for the footer page*/
+footer {
+  background: #000;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  padding: 5px;
+}
+
+/* Laptop view */
+@media (max-width: px) {
+  .bio {
+    border-spacing: 20px;
+    line-height: 30px;
+    margin-left: -70%;
+    display: inline-block;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 868px) {
+  .intro .h3 {
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 3px;
+  }
+  .intro .h1 {
+    font-size: 70px;
+    font-weight: 400;
+    color: #000;
+  }
+  .intro .h2 {
+    font-size: 30px;
+    font-weight: 300;
+    padding-left: 3px;
+  }
+  .btn {
+    background: #5c4e4e;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 25px;
+    font-weight: 200;
+    margin-top: 60px;
+    display: inline-block;
+    border: 2px solid #5c4e4e;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .about {
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+  }
+  .photo {
+    margin: 25px auto;
+  }
+  .photo img {
+    width: 30%;
+    height: 85%;
+    border: 2px dashed #988686;
+  }
+  .bio {
+    border-spacing: 20px;
+    line-height: 30px;
+    margin: 0 auto;
+    display: inline-block;
+  }
+  .aboutBtn {
+    display: none;
+  }
+  .tech {
+    display: inline-block;
+    justify-content: space-between;
+    margin: auto 30px;
+    padding: 16px 10px;
+  }
+
+  .tech h2 {
+    font-size: 20px;
+  }
+
+  .skill-container {
+    margin-bottom: 15px;
+  }
+  .tech2 {
+    margin-left: 10%;
+    width: 82%;
+    margin: 15% auto;
+  }
+}
+/* 600PX Mobile view */
+@media (max-width: 600px) {
+  .intro .h3 {
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 3px;
+  }
+  .intro .h1 {
+    font-size: 50px;
+    font-weight: 400;
+    color: #000;
+  }
+  .intro .h2 {
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 3px;
+  }
+  .btn {
+    background: #5c4e4e;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 40px;
+    display: inline-block;
+    border: 2px solid #5c4e4e;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .skills {
+    display: inline-block;
+    padding: 20px;
+  }
+  .web-design {
+    background: #5c4e4e;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+    transition: 0.3s ease;
+  }
+}
+
+/* 450PX Mobile view */
+@media (max-width: 450px) {
+  .intro h {
+  }
+  .intro .h3 {
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 3px;
+  }
+  .intro .h1 {
+    font-size: 50px;
+    font-weight: 400;
+    color: #000;
+    margin-right: 10px;
+  }
+  .intro .h2 {
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 3px;
+  }
+}
+
+/* 370PX Mobile view */
+@media (max-width: 370px) {
+  .intro {
+    margin: auto auto;
+    padding: 46px 1px;
+    margin-top: 60px;
+  }
+
+  .intro .h3 {
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 3px;
+  }
+  .intro .h1 {
+    font-size: 40px;
+    font-weight: 400;
+    color: #000;
+    margin-right: 10px;
+  }
+  .intro .h2 {
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 3px;
+  }
+  nav li a {
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+}
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: red;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */

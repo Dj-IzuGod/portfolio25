@@ -1,0 +1,44 @@
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+.contactSide1 {
+  margin: auto 30px;
+  padding-left: 15px;
+}
+.contactSide2 {
+  margin: 40px;
+  width: 40%;
+  margin-top: 100px;
+}
+.contactSide2 li {
+  list-style: none;
+  padding: 10px 0px;
+  margin-left: -45px;
+}
+
+.contactSide2 h3 {
+  margin-bottom: -50px;
+}
+.contactIcon {
+  display: flex;
+  padding: 0px;
+}
+.icon {
+  margin: auto 10px;
+}
+/* Styling for Mobile view*/
+@media (max-width: 868px) {
+  .contact {
+    display: inline-block;
+  }
+  .contactSide2 h3 {
+    margin-bottom: -20px;
+  }
+  .contactSide2 {
+    width: 40%;
+    margin-top: 70px;
+    margin: auto 30px;
+    padding-left: 15px;
+  }
+}
