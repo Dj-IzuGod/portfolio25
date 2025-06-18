@@ -58,11 +58,14 @@ function Contact() {
         </div>
         <div className="contactSide2">
           <h3>Message me</h3>
-          <Button name="WhatsApp" />
+          <Button name="WhatsApp" value="https://wa.me/09017055095" />
           <ul>
             <li>
               {" "}
-              <Linkedin style={{ margin: "-6px 10px" }} /> linkedin
+              <a href="www.linkedin.com/in/nwali-izuchukwu-hosea">
+                <Linkedin style={{ margin: "-6px 10px", color: "#000" }} />{" "}
+                linkedin
+              </a>
             </li>
             <li>
               <X style={{ margin: "-6px 10px" }} /> X
