@@ -11,7 +11,7 @@ function About() {
       </p>
       <div className="about">
         <div className="photo">
-          <img src="/public/images/GP-pics copy.webp" alt="Profile picture" />
+          <img src="/images/GP-pics copy.webp" alt="Profile picture" />
         </div>
         <div className="bio">
           <h2>I am Nwali Izuchukwu Hosea</h2>
