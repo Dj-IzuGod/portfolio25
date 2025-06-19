@@ -38,9 +38,11 @@ function Header() {
       {/* <!-- Mobile Menu --> */}
       <nav class="mobile-nav">
         <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#tech">Technologies</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
   );

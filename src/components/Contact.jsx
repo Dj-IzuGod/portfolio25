@@ -62,16 +62,31 @@ function Contact() {
           <ul>
             <li>
               {" "}
-              <a href="www.linkedin.com/in/nwali-izuchukwu-hosea">
-                <Linkedin style={{ margin: "-6px 10px", color: "#000" }} />{" "}
-                linkedin
+              <a
+                href="https://www.linkedin.com/in/nwali-izuchukwu-hosea"
+                target="_blank"
+                style={{ color: "#000" }}
+              >
+                <Linkedin style={{ margin: "-6px 10px" }} /> linkedin
               </a>
             </li>
             <li>
-              <X style={{ margin: "-6px 10px" }} /> X
+              <a
+                href="https://x.com/IzuGodN1"
+                target="_blank"
+                style={{ color: "#000" }}
+              >
+                <X style={{ margin: "-6px 10px" }} /> X
+              </a>
             </li>
             <li>
-              <Instagram style={{ margin: "-6px 10px" }} /> instagram
+              <a
+                href="https://www.instagram.com/iam_izuchukwu_?igsh=czhnMDM0MDhncDd0"
+                target="_blank"
+                style={{ color: "#000" }}
+              >
+                <Instagram style={{ margin: "-6px 10px" }} /> instagram
+              </a>
             </li>
           </ul>
         </div>
