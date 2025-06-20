@@ -11,7 +11,7 @@ function Tech() {
       <div className="tech">
         <div className="tech1">
           <h2>
-            These are the Technoligies I leverage on to provide cost-effective
+            These are the Technologies I leverage on to provide cost-effective
             and reliable software products
           </h2>
           <p className="aboutBtn">
@@ -61,11 +61,11 @@ function Tech() {
           <div className="skill-container">
             <div className="skill-name">
               <span>React</span>
-              <span>70%</span>
+              <span>80%</span>
             </div>
             <div className="progress-bar">
-              <div className="progress" style={{ width: "70%" }}>
-                70%
+              <div className="progress" style={{ width: "80%" }}>
+                80%
               </div>
             </div>
           </div>

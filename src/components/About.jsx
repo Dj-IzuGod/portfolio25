@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "./Button";
-// import { Minus } from "lucide-react";
 
 function About() {
   return (
@@ -11,7 +10,16 @@ function About() {
       </p>
       <div className="about">
         <div className="photo">
-          <img src="/images/GP-pics copy.webp" alt="Profile picture" />
+          <img
+            className="circle-img"
+            src="/images/GP-pics copy.webp"
+            alt="avatar_img"
+          />
+          <img
+            className="square-img"
+            src="/images/GP-pics copy.webp"
+            alt="Profile picture"
+          />
         </div>
         <div className="bio">
           <h2>I am Nwali Izuchukwu Hosea</h2>

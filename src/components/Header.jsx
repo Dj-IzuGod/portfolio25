@@ -29,14 +29,14 @@ function Header() {
       </nav>
       {/* <!-- Mobile Hamburger Menu (CSS-only toggle) --> */}
       <input type="checkbox" id="menu-toggle" className="menu-toggle" />
-      <label for="menu-toggle" class="hamburger">
+      <label htmlFor="menu-toggle" className="hamburger">
         <span></span>
         <span></span>
         <span></span>
       </label>
 
       {/* <!-- Mobile Menu --> */}
-      <nav class="mobile-nav">
+      <nav className="mobile-nav">
         <a href="#">Home</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>

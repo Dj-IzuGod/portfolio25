@@ -99,6 +99,15 @@ a {
   margin-left: -34%;
 }
 
+/* Styling for Avatar */
+.circle-img {
+  border-radius: 50%;
+  border: 7px solid #fff;
+  width: 120px;
+  height: 120px;
+  display: none;
+}
+
 /* Styles for Skills Page*/
 .skillPage {
   background: #000;
@@ -377,6 +386,14 @@ footer {
     text-decoration: none;
     transition: color 0.3s ease;
   }
+}
+
+/* Styling for Avatar */
+.circle-img {
+  display: inline;
+}
+.square-img {
+  display: none;
 }
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
