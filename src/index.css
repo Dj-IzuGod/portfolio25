@@ -91,7 +91,6 @@ a {
   width: 30%;
   height: 85%;
   border: 2px dashed #988686;
-  margin-left: 20px;
 }
 .bio {
   border-spacing: 20px;
@@ -101,10 +100,6 @@ a {
 
 /* Styling for Avatar */
 .circle-img {
-  border-radius: 50%;
-  border: 7px solid #fff;
-  width: 120px;
-  height: 120px;
   display: none;
 }
 
@@ -351,6 +346,23 @@ footer {
     font-weight: 300;
     padding-left: 3px;
   }
+  .circle-img {
+    display: inline;
+    border-radius: 50%;
+    border: 7px solid #fff;
+    width: 120px;
+    height: 130px;
+  }
+  .photo img {
+    border: 2px dashed #988686;
+  }
+  .photo {
+    height: 150px;
+    padding: 10px;
+  }
+  .square-img {
+    display: none;
+  }
 }
 
 /* 370PX Mobile view */
@@ -389,12 +401,7 @@ footer {
 }
 
 /* Styling for Avatar */
-.circle-img {
-  display: inline;
-}
-.square-img {
-  display: none;
-}
+
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

@@ -12,7 +12,7 @@ function About() {
         <div className="photo">
           <img
             className="circle-img"
-            src="/images/GP-pics copy.webp"
+            src="/images/GP-pics cut.jpeg"
             alt="avatar_img"
           />
           <img
