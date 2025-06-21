@@ -7,6 +7,7 @@ import {
   MailPlus,
   Linkedin,
   Instagram,
+  Download,
   X,
 } from "lucide-react";
 
@@ -86,6 +87,12 @@ function Contact() {
                 style={{ color: "#000" }}
               >
                 <Instagram style={{ margin: "-6px 10px" }} /> instagram
+              </a>
+            </li>
+            <li>
+              <a href="/My Resume (2).pdf" download style={{ color: "#000" }}>
+                <Download style={{ margin: "-6px 10px" }} /> Download my resume
+                here
               </a>
             </li>
           </ul>

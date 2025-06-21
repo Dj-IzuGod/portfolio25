@@ -346,19 +346,25 @@ footer {
     font-weight: 300;
     padding-left: 3px;
   }
+  .intro .btn {
+    display: none;
+  }
   .circle-img {
     display: inline;
     border-radius: 50%;
     border: 7px solid #fff;
     width: 120px;
     height: 130px;
+    padding-top: 5px;
+    background: #fff;
   }
   .photo img {
     border: 2px dashed #988686;
   }
   .photo {
-    height: 150px;
+    height: 140px;
     padding: 10px;
+    padding-top: 10px;
   }
   .square-img {
     display: none;
