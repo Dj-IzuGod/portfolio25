@@ -20,6 +20,12 @@ header h1 {
   margin-left: 30px;
 }
 
+.corinthia-bold {
+  font-family: "Corinthia", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
+
 /* Desktop Navigation */
 .nav-links {
   display: flex;

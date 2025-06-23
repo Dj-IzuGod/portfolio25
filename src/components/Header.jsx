@@ -4,7 +4,7 @@ import "../Header.css";
 function Header() {
   return (
     <header className="navbar">
-      <h1>Portfolio</h1>
+      <h1 className="corinthia-bold">Portfolio</h1>
       <nav className="nav-links">
         <ul>
           <li>
