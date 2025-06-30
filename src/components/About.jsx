@@ -9,18 +9,17 @@ function About() {
         <u>Who am I?</u>
       </p>
       <div className="about">
-        <div className="photo">
-          <img
-            className="circle-img"
-            src="/images/GP-pics cut.jpeg"
-            alt="avatar_img"
-          />
-          <img
-            className="square-img"
-            src="/images/GP-pics copy.webp"
-            alt="Profile picture"
-          />
-        </div>
+        <img
+          className="circle-img"
+          src="/images/GP-pics cut.jpeg"
+          alt="avatar_img"
+        />
+        <img
+          className="square-img"
+          src="/images/GP-pics copy.webp"
+          alt="Profile picture"
+        />
+
         <div className="bio">
           <h2>I am Nwali Izuchukwu Hosea</h2>
           <p>

@@ -92,7 +92,7 @@ nav li a:hover {
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 898px) {
   .nav-links {
     display: none; /* Hide desktop nav on mobile */
   }
