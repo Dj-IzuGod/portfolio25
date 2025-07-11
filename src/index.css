@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  /* outline: 1px solid red; Temporarily visualizing boundaries */
 }
 html {
   font-family: "Montserrat", sans-serif;
@@ -380,5 +379,3 @@ footer {
     transition: color 0.3s ease;
   }
 }
-
-/* Styling for Avatar */
