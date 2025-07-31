@@ -1,5 +1,4 @@
-/* Base Styles */
-
+/* Header Styling */
 .navbar {
   background: #000;
   color: white;
@@ -7,7 +6,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.1rem 2rem;
-
   position: sticky;
   top: 0;
   width: 100%;
@@ -94,11 +92,11 @@ nav li a:hover {
 /* Mobile Responsiveness */
 @media (max-width: 898px) {
   .nav-links {
-    display: none; /* Hide desktop nav on mobile */
+    display: none;
   }
 
   .hamburger {
-    display: flex; /* Show hamburger icon */
+    display: flex;
   }
 
   /* Toggle mobile menu when checkbox is checked */

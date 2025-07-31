@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import "../Gallery.css";
 
+// Projects page: displaying pictures of projects
+
 const Projects = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [currentGroup, setCurrentGroup] = useState(null);

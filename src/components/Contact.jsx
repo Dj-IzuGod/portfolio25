@@ -13,6 +13,7 @@ import {
 
 function Contact() {
   return (
+    // Contact page
     <div id="contact">
       <h1>Contact</h1>
       <p className="aboutMe">

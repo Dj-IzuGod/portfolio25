@@ -3,6 +3,7 @@ import "../Header.css";
 
 function Header() {
   return (
+    // Header page
     <header className="navbar">
       <h1 className="corinthia-bold">Portfolio</h1>
       <nav className="nav-links">

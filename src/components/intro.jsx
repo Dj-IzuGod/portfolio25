@@ -1,6 +1,8 @@
 import React from "react";
 import Button from "./Button";
 
+// Intro page
+
 function Intro() {
   const date = new Date();
   const hour = date.getHours();

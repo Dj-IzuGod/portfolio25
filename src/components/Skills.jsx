@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
-import PropTypes from "prop-types";
+import React from "react";
 import { Brush, ChartLine, Presentation } from "lucide-react";
 
 function Skills() {
   return (
+    // Skills page
     <div className="skillPage" id="skills">
       <h1>My Skills</h1>
       <p>

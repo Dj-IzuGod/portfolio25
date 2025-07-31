@@ -3,6 +3,7 @@ import Button from "./Button";
 
 function About() {
   return (
+    // About page
     <div className="aboutPage" id="about">
       <h1 className="aboutMe">About me</h1>
       <p className="aboutMe">
