@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-
+import useScrollAnimation from "../AnimationHook";
 import "../Gallery.css";
 
 // Projects page: displaying pictures of projects
 
 const Projects = () => {
+  const fadeInRef = useScrollAnimation(200);
   const [isOpen, setIsOpen] = useState(false);
   const [currentGroup, setCurrentGroup] = useState(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -76,71 +77,73 @@ const Projects = () => {
   };
 
   return (
-    <div className=" gallery-container skillPage " id="projects">
-      <h1>My Projects</h1>
-      <p className="aboutMe">
-        <u>What have I worked on?</u>
-      </p>
-      <div className="thumbnail-grid">
-        {imageGroups.map((group, index) => (
-          <div>
-            <h4>{group.titles}</h4>
-            <div key={index} className="thumbnail-wrapper">
-              <img
-                src={group.cover}
-                alt={`Group ${index + 1}`}
-                onClick={() => openModal(group)}
-                className="thumbnail"
-              />
-              <div className="badge">{group.images.length}</div>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {isOpen && currentGroup && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="close-btn" onClick={closeModal}>
-              &times;
-            </button>
-
-            <div className="main-image-container">
-              <button className="nav-btn prev-btn" onClick={goToPrev}>
-                &lt;
-              </button>
-
-              <img
-                src={currentGroup.images[currentImageIndex]}
-                alt={`Image ${currentImageIndex + 1}`}
-                className="main-image"
-              />
-
-              <button className="nav-btn next-btn" onClick={goToNext}>
-                &gt;
-              </button>
-            </div>
-
-            <div className="thumbnail-strip">
-              {currentGroup.images.map((img, index) => (
+    <div className="projectContainer" id="projects">
+      <div className=" gallery-container skillPage fade-in " ref={fadeInRef}>
+        <h1>My Projects</h1>
+        <p className="aboutMe">
+          <u>What have I worked on?</u>
+        </p>
+        <div className="thumbnail-grid">
+          {imageGroups.map((group, index) => (
+            <div>
+              <h4>{group.titles}</h4>
+              <div key={index} className="thumbnail-wrapper">
                 <img
-                  key={index}
-                  src={img}
-                  alt={`Thumb ${index + 1}`}
-                  onClick={() => setCurrentImageIndex(index)}
-                  className={`thumbnail-preview ${
-                    index === currentImageIndex ? "active" : ""
-                  }`}
+                  src={group.cover}
+                  alt={`Group ${index + 1}`}
+                  onClick={() => openModal(group)}
+                  className="thumbnail"
                 />
-              ))}
+                <div className="badge">{group.images.length}</div>
+              </div>
             </div>
+          ))}
+        </div>
 
-            <div className="image-counter">
-              {currentImageIndex + 1} / {currentGroup.images.length}
+        {isOpen && currentGroup && (
+          <div className="modal-overlay" onClick={closeModal}>
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <button className="close-btn" onClick={closeModal}>
+                &times;
+              </button>
+
+              <div className="main-image-container">
+                <button className="nav-btn prev-btn" onClick={goToPrev}>
+                  &lt;
+                </button>
+
+                <img
+                  src={currentGroup.images[currentImageIndex]}
+                  alt={`Image ${currentImageIndex + 1}`}
+                  className="main-image"
+                />
+
+                <button className="nav-btn next-btn" onClick={goToNext}>
+                  &gt;
+                </button>
+              </div>
+
+              <div className="thumbnail-strip">
+                {currentGroup.images.map((img, index) => (
+                  <img
+                    key={index}
+                    src={img}
+                    alt={`Thumb ${index + 1}`}
+                    onClick={() => setCurrentImageIndex(index)}
+                    className={`thumbnail-preview ${
+                      index === currentImageIndex ? "active" : ""
+                    }`}
+                  />
+                ))}
+              </div>
+
+              <div className="image-counter">
+                {currentImageIndex + 1} / {currentGroup.images.length}
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 };

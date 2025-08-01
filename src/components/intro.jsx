@@ -19,7 +19,7 @@ function Intro() {
   }
 
   return (
-    <div className="intro" id="home">
+    <div className="intro " id="home">
       <div className="h3">Hello {greeting}, my name is</div>
       <div className="h1">IZUCHUKWU</div>
       <div className="h2">

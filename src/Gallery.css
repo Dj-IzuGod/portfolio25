@@ -1,4 +1,7 @@
 /* Gallery Styling for our projects page */
+.projectContainer {
+  padding-top: 10%;
+}
 .gallery-container {
   background: #000;
   color: #fff;
