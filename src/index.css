@@ -388,7 +388,7 @@ footer {
   }
 }
 
-/*css  style for scroll animation*/
+/*css  style for  animation*/
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
@@ -398,4 +398,42 @@ footer {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.item {
+  opacity: 0;
+  transform: translateX(100px);
+  animation: slideIn 0.5s forwards;
+}
+
+.itemButton {
+  opacity: 0;
+  transform: translateY(100px);
+  animation: slideInButton 0.5s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInButton {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional: Stagger animations for multiple items */
+.item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.item:nth-child(3) {
+  animation-delay: 0.3s;
 }

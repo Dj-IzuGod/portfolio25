@@ -20,13 +20,13 @@ function Intro() {
 
   return (
     <div className="intro " id="home">
-      <div className="h3">Hello {greeting}, my name is</div>
-      <div className="h1">IZUCHUKWU</div>
-      <div className="h2">
+      <div className="h3 item">Hello {greeting}, my name is</div>
+      <div className="h1 item">IZUCHUKWU</div>
+      <div className="h2 item">
         And I'm a <span className="title">Software Developer</span>
       </div>
 
-      <Button name="About me" value="#about" />
+      <Button class="btn itemButton" name="About me" value="#about" />
     </div>
   );
 }

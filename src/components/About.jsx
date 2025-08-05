@@ -36,7 +36,7 @@ function About() {
               University of Technology Owerri.
             </p>
             <div className="aboutBtn">
-              <Button name="My Skills" value="#skills" />
+              <Button class="btn" name="My Skills" value="#skills" />
             </div>
           </div>
         </div>

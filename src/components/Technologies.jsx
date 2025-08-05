@@ -19,7 +19,7 @@ function Tech() {
             Click the button below to see some of my projects
           </p>
           <div className="aboutBtn">
-            <Button name="Projects" value="#projects" />
+            <Button class="btn" name="Projects" value="#projects" />
           </div>
         </div>
         <div className="tech2">
