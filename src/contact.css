@@ -1,4 +1,7 @@
 /* Styling for the contact page */
+.contactSection {
+  padding-top: 5.5%;
+}
 .contact {
   display: flex;
   justify-content: space-between;

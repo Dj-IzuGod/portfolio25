@@ -89,6 +89,20 @@ nav li a:hover {
   border-bottom: 1px solid #444;
 }
 
+/* Header animation */
+.navbar {
+  opacity: 0;
+  transform: translateY(-50px);
+  animation: navEnter 0.5s ease-out forwards;
+}
+
+@keyframes navEnter {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 898px) {
   .nav-links {

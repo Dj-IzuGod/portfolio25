@@ -14,7 +14,7 @@ import {
 function Contact() {
   return (
     // Contact page
-    <div id="contact">
+    <div id="contact" className="contactSection">
       <h1>Contact</h1>
       <p className="aboutMe">
         <u>You want to book an appointment?</u>
@@ -60,7 +60,11 @@ function Contact() {
         </div>
         <div className="contactSide2">
           <h3>Message me</h3>
-          <Button name="WhatsApp" value="https://wa.me/09017055095" />
+          <Button
+            class="btn"
+            name="WhatsApp"
+            value="https://wa.me/09017055095"
+          />
           <ul>
             <li>
               {" "}
