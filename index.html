@@ -50,8 +50,16 @@
     <link rel="manifest" href="site.webmanifest" />
   </head>
   <body>
-    <div id="root"></div>
+    <!-- Loading screen -->
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+      <div class="loader-text">Loading...</div>
+    </div>
+
+    <!-- Loaded screen -->
+    <div id="root" class="content"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script src="index.js"></script>
+    <script src="/src/script.js"></script>
   </body>
 </html>
