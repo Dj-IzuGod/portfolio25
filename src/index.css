@@ -199,6 +199,8 @@ footer {
 
 /*-- Loading screen --*/
 .loader-wrapper {
+  margin: 0;
+  padding: 0;
   position: fixed;
   top: 0;
   left: 0;
@@ -440,6 +442,28 @@ footer {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.fade-inRight {
+  opacity: 0;
+  transform: translateX(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-inRight.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.fade-inLeft {
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-inLeft.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .item {

@@ -1,6 +1,7 @@
 import React from "react";
 import "../contact.css";
 import Button from "./Button";
+import useScrollAnimation from "../AnimationHook";
 import {
   User,
   MapPinHouse,
@@ -12,6 +13,7 @@ import {
 } from "lucide-react";
 
 function Contact() {
+  const fadeInRef = useScrollAnimation(200);
   return (
     // Contact page
     <div id="contact" className="contactSection">
@@ -20,7 +22,7 @@ function Contact() {
         <u>You want to book an appointment?</u>
       </p>
       <div className="contact">
-        <div className="contactSide1">
+        <div className="contactSide1 fade-inLeft" ref={fadeInRef}>
           <h3>Contact me</h3>
           <p>Get in touch with me for an appointment and questions</p>
           <div className="contactIcon">

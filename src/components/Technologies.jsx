@@ -1,7 +1,9 @@
 import React from "react";
 import Button from "./Button";
+import useScrollAnimation from "../AnimationHook";
 
 function Tech() {
+  const fadeInRef = useScrollAnimation(200);
   return (
     // Technologies page and percentage rating
     <div className="techPage" id="tech">
@@ -22,7 +24,7 @@ function Tech() {
             <Button class="btn" name="Projects" value="#projects" />
           </div>
         </div>
-        <div className="tech2">
+        <div className="tech2 fade-inRight" ref={fadeInRef}>
           <div className="skill-container">
             <div className="skill-name">
               <span>HTML</span>
