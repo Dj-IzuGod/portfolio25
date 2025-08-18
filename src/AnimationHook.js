@@ -14,7 +14,7 @@ export const useScrollAnimation = (delay = 200) => {
           }
         });
       },
-      { threshold: 0.1 } // Trigger when 10% of the element is visible
+      { threshold: 0.3 } // Trigger when 30% of the element is visible
     );
 
     if (elementRef.current) {

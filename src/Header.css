@@ -94,7 +94,7 @@ nav li a:hover {
   opacity: 0;
   transform: translateY(-50px);
   animation: navEnter 0.5s ease-out forwards;
-  animation-delay: 2.1s;
+  animation-delay: 2s;
 }
 
 @keyframes navEnter {

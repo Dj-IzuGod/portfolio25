@@ -78,12 +78,12 @@ const Projects = () => {
 
   return (
     <div className="projectContainer" id="projects">
-      <div className=" gallery-container skillPage fade-in " ref={fadeInRef}>
+      <div className=" gallery-container skillPage  ">
         <h1>My Projects</h1>
         <p className="aboutMe">
           <u>What have I worked on?</u>
         </p>
-        <div className="thumbnail-grid">
+        <div className="thumbnail-grid fade-inLeft" ref={fadeInRef}>
           {imageGroups.map((group, index) => (
             <div>
               <h4>{group.titles}</h4>
