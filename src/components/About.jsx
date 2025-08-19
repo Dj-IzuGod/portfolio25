@@ -3,7 +3,7 @@ import Button from "./Button";
 import useScrollAnimation from "../AnimationHook";
 
 function About() {
-  const fadeInRef = useScrollAnimation(3000);
+  const fadeInRef = useScrollAnimation(2000);
   return (
     // About page
     <div className="" id="about">
