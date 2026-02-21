@@ -24,6 +24,7 @@ function Intro() {
       <div className="h1 item">IZUCHUKWU</div>
       <div className="h2 item">
         And I'm a <span className="title">Software Developer</span>
+        <p>And a Songwriter</p>
       </div>
 
       <Button class="btn itemButton" name="About me" value="#about" />
