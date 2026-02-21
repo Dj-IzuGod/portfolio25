@@ -27,7 +27,7 @@ function About() {
           <div className="bio">
             <h2>I am Nwali Izuchukwu Hosea</h2>
             <p>
-              I am a software developer with expertise in React.js (frontend)
+              I am a Songwriter and a software developer with expertise in React.js (frontend)
               and Node.js (backend), dedicated to engineering scalable,
               high-performance web applications. <br /> <br />
               I thrive in collaborative environments, building intuitive user
